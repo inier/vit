@@ -1,6 +1,6 @@
 'use strict';
 
-const renderer = require('..');
+const renderer = require('../src/renderer');
 
 describe('renderer', () => {
     it('needs tests');

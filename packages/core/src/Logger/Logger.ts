@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+import { chalk } from '@vitjs/utils';
 
 import Common from './Common';
 

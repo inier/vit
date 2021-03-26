@@ -1,11 +1,3 @@
-# `renderer`
+# `@vitjs/renderer`
 
-> TODO: description
-
-## Usage
-
-```
-const renderer = require('renderer');
-
-// TODO: DEMONSTRATE API
-```
+> VitJS 渲染器，主要是路由渲染。
