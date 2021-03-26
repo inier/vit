@@ -1,9 +1,23 @@
 {
   "name": "@vitjs/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/@vitjs/core.umd.js",
+  "module": "./dist/@vitjs/core.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/@vitjs/core.es.js",
+      "require": "./dist/@vitjs/core.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
   }
 }

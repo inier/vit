@@ -4,9 +4,8 @@ import path from 'path';
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.js'),
-      name: 'MyLib',
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: '@umijs/core',
     },
-    rollupOptions: {},
   },
 });

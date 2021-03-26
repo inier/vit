@@ -1,1 +1,3 @@
-console.log('Hello, World!');
+import Logger from './Logger/Logger';
+
+export { Logger };
