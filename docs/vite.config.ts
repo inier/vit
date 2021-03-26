@@ -7,6 +7,9 @@ import pages from 'vite-plugin-react-pages';
 
 export default {
   jsx: 'react',
+  server: {
+    port: 8421,
+  },
   plugins: [
     reactRefresh(),
     mdx(),
@@ -53,12 +56,15 @@ export default {
 
         // we also want to collect pages from `/pages` with basic filesystem routing convention
         const defaultPages = await helpers.defaultFindPages(path.join(__dirname, 'pages'));
+        console.log('defaultPages',defaultPages)
         defaultPages.forEach(helpers.addPageData);
       },
     }),
   ],
   resolve: {
     alias: {
+      // https://github.com/vitejs/vite-plugin-react-pages/issues/20
+      '/@pages-infra': path.resolve(__dirname, '../node_modules/vite-plugin-react-pages/dist/client'),
       'my-button': path.resolve(__dirname, '../button/src'),
       'my-card': path.resolve(__dirname, '../card/src'),
     },
