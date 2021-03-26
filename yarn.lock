@@ -36,7 +36,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.12.13":
+"@babel/core@^7.12.10", "@babel/core@^7.12.13":
   version "7.13.10"
   resolved "https://registry.npm.taobao.org/@babel/core/download/@babel/core-7.13.10.tgz?cache=0&sync_timestamp=1615243069218&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fcore%2Fdownload%2F%40babel%2Fcore-7.13.10.tgz#07de050bbd8193fcd8a3c27918c0890613a94559"
   integrity sha1-B94FC72Bk/zYo8J5GMCJBhOpRVk=
@@ -221,6 +221,13 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
     "@babel/plugin-transform-parameters" "^7.12.1"
+
+"@babel/plugin-syntax-import-meta@^7.10.4":
+  version "7.10.4"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-import-meta/download/@babel/plugin-syntax-import-meta-7.10.4.tgz#ee601348c370fa334d2207be158777496521fd51"
+  integrity sha1-7mATSMNw+jNNIge+FYd3SWUh/VE=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
 
 "@babel/plugin-syntax-jsx@7.12.1":
   version "7.12.1"
@@ -2581,11 +2588,6 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-esbuild@^0.8.31:
-  version "0.8.57"
-  resolved "https://registry.npm.taobao.org/esbuild/download/esbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
-  integrity sha1-pC0CvCtXxwvNDviX/iRHZrtt2SY=
-
 esbuild@^0.9.3:
   version "0.9.7"
   resolved "https://registry.npm.taobao.org/esbuild/download/esbuild-0.9.7.tgz?cache=0&sync_timestamp=1616618442360&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fesbuild%2Fdownload%2Fesbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
@@ -2696,6 +2698,13 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+fault@^1.0.1:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/fault/download/fault-1.0.4.tgz#eafcfc0a6d214fc94601e170df29954a4f842f13"
+  integrity sha1-6vz8Cm0hT8lGAeFw3ymVSk+ELxM=
+  dependencies:
+    format "^0.2.0"
+
 figures@^3.0.0:
   version "3.2.0"
   resolved "https://registry.npm.taobao.org/figures/download/figures-3.2.0.tgz#625c18bd293c604dc4a8ddb2febf0c88341746af"
@@ -2714,11 +2723,6 @@ filter-obj@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/filter-obj/download/filter-obj-1.1.0.tgz#9b311112bc6c6127a16e016c6c5d7f19e0805c5b"
   integrity sha1-mzERErxsYSehbgFsbF1/GeCAXFs=
-
-find-dependency@^1.3.0:
-  version "1.3.3"
-  resolved "https://registry.npm.taobao.org/find-dependency/download/find-dependency-1.3.3.tgz#a14d5f341a13b06f23a445f6706bdb319947f918"
-  integrity sha1-oU1fNBoTsG8jpEX2cGvbMZlH+Rg=
 
 find-up@^1.0.0:
   version "1.1.2"
@@ -2764,6 +2768,11 @@ form-data@~2.3.2:
     asynckit "^0.4.0"
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
+
+format@^0.2.0:
+  version "0.2.2"
+  resolved "https://registry.npm.taobao.org/format/download/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
+  integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
 fs-extra@^9.0.1, fs-extra@^9.1.0:
   version "9.1.0"
@@ -5554,6 +5563,13 @@ remark-footnotes@2.0.0:
   resolved "https://registry.npm.taobao.org/remark-footnotes/download/remark-footnotes-2.0.0.tgz#9001c4c2ffebba55695d2dd80ffb8b82f7e6303f"
   integrity sha1-kAHEwv/rulVpXS3YD/uLgvfmMD8=
 
+remark-frontmatter@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/remark-frontmatter/download/remark-frontmatter-2.0.0.tgz#c9b8539c27cd23b1672c7e0fcbd5795eeedb4dc1"
+  integrity sha1-ybhTnCfNI7FnLH4Py9V5Xu7bTcE=
+  dependencies:
+    fault "^1.0.1"
+
 remark-mdx@1.6.22:
   version "1.6.22"
   resolved "https://registry.npm.taobao.org/remark-mdx/download/remark-mdx-1.6.22.tgz?cache=0&sync_timestamp=1616081348478&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fremark-mdx%2Fdownload%2Fremark-mdx-1.6.22.tgz#06a8dab07dcfdd57f3373af7f86bd0e992108bbd"
@@ -6671,13 +6687,17 @@ vite-pages-theme-basic@^2.0.4:
   dependencies:
     github-markdown-css "^4.0.0"
 
-vite-plugin-mdx@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.npm.taobao.org/vite-plugin-mdx/download/vite-plugin-mdx-3.2.2.tgz#cba29294e64f7107c86b4c41c8505303b6201359"
-  integrity sha1-y6KSlOZPcQfIa0xByFBTA7YgE1k=
+vite-plugin-mdx@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/vite-plugin-mdx/download/vite-plugin-mdx-2.0.1.tgz#69f4f9991b1bf4bce83d7d511bc30af2095e2fbf"
+  integrity sha1-afT5mRsb9LzoPX1RG8MK8gleL78=
   dependencies:
-    esbuild "^0.8.31"
-    find-dependency "^1.3.0"
+    "@babel/core" "^7.12.10"
+    "@babel/plugin-syntax-import-meta" "^7.10.4"
+    "@mdx-js/mdx" "^1.6.22"
+    "@mdx-js/react" "^1.6.22"
+    react-refresh "^0.9.0"
+    remark-frontmatter "^2.0.0"
 
 vite-plugin-react-pages@^2.1.0:
   version "2.1.0"
