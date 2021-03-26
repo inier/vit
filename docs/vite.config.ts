@@ -17,10 +17,8 @@ export default {
       findPages: async (helpers) => {
         const pagesByComponent: { [comp: string]: any } = {};
         const demosBasePath = path.join(__dirname, '../');
-        console.log('demosBasePath', demosBasePath);
         // find all demo modules
         let demoPaths = await helpers.globFind(demosBasePath, '*/demos/**/*.{[tj]sx,md?(x)}');
-        console.log('demoPaths', demoPaths);
 
         await Promise.all(
           demoPaths.map(async ({ relative, absolute }) => {
