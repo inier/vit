@@ -11,11 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
-    "declaration": true,
-    "paths": {
-      "@vitjs/runtime": ["./packages/runtime/src/index.ts"],
-      "@vitjs/utils": ["./packages/utils/src/index.tsx"]
-    }
+    "declaration": true
   },
-  "exclude": ["node_modules", "**/*.spec.ts", "lib", "fixtures", "examples", "**/__tests__"]
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "lib", "fixtures", "examples"]
 }

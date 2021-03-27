@@ -1214,6 +1214,13 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
+"@babel/runtime@7.12.5":
+  version "7.12.5"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.12.5.tgz?cache=0&sync_timestamp=1615243066705&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha1-QQ5+SHRB4bNgwpvnFdhw2bmFiC4=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.8.4":
   version "7.13.10"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.13.10.tgz?cache=0&sync_timestamp=1615243066705&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
@@ -2473,7 +2480,7 @@
     "@types/react" "*"
     "@types/webpack" "^4"
 
-"@types/react-router-dom@^5.1.7":
+"@types/react-router-dom@5.1.7", "@types/react-router-dom@^5.1.7":
   version "5.1.7"
   resolved "https://registry.npm.taobao.org/@types/react-router-dom/download/@types/react-router-dom-5.1.7.tgz#a126d9ea76079ffbbdb0d9225073eb5797ab7271"
   integrity sha1-oSbZ6nYHn/u9sNkiUHPrV5ercnE=
@@ -2482,7 +2489,7 @@
     "@types/react" "*"
     "@types/react-router" "*"
 
-"@types/react-router@*":
+"@types/react-router@*", "@types/react-router@5.1.12":
   version "5.1.12"
   resolved "https://registry.npm.taobao.org/@types/react-router/download/@types/react-router-5.1.12.tgz?cache=0&sync_timestamp=1614625116578&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-router%2Fdownload%2F%40types%2Freact-router-5.1.12.tgz#0f300e09468e7aed86e18241c90238c18c377e51"
   integrity sha1-DzAOCUaOeu2G4YJByQI4wYw3flE=
@@ -2562,6 +2569,61 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
+"@umijs/ast@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/ast/download/@umijs/ast-3.4.7.tgz#20f17c4b06e2ff553a3a60b0092c771b8ac7d444"
+  integrity sha1-IPF8Swbi/1U6OmCwCSx3G4rH1EQ=
+  dependencies:
+    "@umijs/utils" "3.4.7"
+
+"@umijs/babel-plugin-auto-css-modules@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-auto-css-modules/download/@umijs/babel-plugin-auto-css-modules-3.4.7.tgz?cache=0&sync_timestamp=1616740125622&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-plugin-auto-css-modules%2Fdownload%2F%40umijs%2Fbabel-plugin-auto-css-modules-3.4.7.tgz#5084a206eda12988b6b6bc7c64c7d15b3fd4a8a4"
+  integrity sha1-UISiBu2hKYi2trx8ZMfRWz/UqKQ=
+
+"@umijs/babel-plugin-import-to-await-require@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-import-to-await-require/download/@umijs/babel-plugin-import-to-await-require-3.4.7.tgz?cache=0&sync_timestamp=1616740127795&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-plugin-import-to-await-require%2Fdownload%2F%40umijs%2Fbabel-plugin-import-to-await-require-3.4.7.tgz#1164fb2cde1c5ad614b8ba47342d28fd08d4eaa0"
+  integrity sha1-EWT7LN4cWtYUuLpHNC0o/QjU6qA=
+  dependencies:
+    "@umijs/utils" "3.4.7"
+
+"@umijs/babel-plugin-lock-core-js-3@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-lock-core-js-3/download/@umijs/babel-plugin-lock-core-js-3-3.4.7.tgz?cache=0&sync_timestamp=1616740127290&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-plugin-lock-core-js-3%2Fdownload%2F%40umijs%2Fbabel-plugin-lock-core-js-3-3.4.7.tgz#dffb60be8b8ef268245b12ceb5856a308dbfc815"
+  integrity sha1-3/tgvouO8mgkWxLOtYVqMI2/yBU=
+  dependencies:
+    "@umijs/utils" "3.4.7"
+    core-js "3.6.5"
+
+"@umijs/babel-plugin-no-anonymous-default-export@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/babel-plugin-no-anonymous-default-export/download/@umijs/babel-plugin-no-anonymous-default-export-3.4.7.tgz?cache=0&sync_timestamp=1616740126084&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-plugin-no-anonymous-default-export%2Fdownload%2F%40umijs%2Fbabel-plugin-no-anonymous-default-export-3.4.7.tgz#6c74c45159ecf11ff377dbc7f37c1b2124649ea3"
+  integrity sha1-bHTEUVns8R/zd9vH83wbISRknqM=
+  dependencies:
+    "@umijs/utils" "3.4.7"
+
+"@umijs/babel-preset-umi@3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/babel-preset-umi/download/@umijs/babel-preset-umi-3.4.7.tgz?cache=0&sync_timestamp=1616740124577&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fbabel-preset-umi%2Fdownload%2F%40umijs%2Fbabel-preset-umi-3.4.7.tgz#43d6dd6307f021055df5c6f9ff03367d2c1ba8d9"
+  integrity sha1-Q9bdYwfwIQVd9cb5/wM2fSwbqNk=
+  dependencies:
+    "@babel/runtime" "7.12.5"
+    "@umijs/babel-plugin-auto-css-modules" "3.4.7"
+    "@umijs/babel-plugin-import-to-await-require" "3.4.7"
+    "@umijs/babel-plugin-lock-core-js-3" "3.4.7"
+    "@umijs/babel-plugin-no-anonymous-default-export" "3.4.7"
+
+"@umijs/core@^3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/core/download/@umijs/core-3.4.7.tgz?cache=0&sync_timestamp=1616740124893&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fcore%2Fdownload%2F%40umijs%2Fcore-3.4.7.tgz#48e35fa176f7d7cb61e3f0183bae64f89a8244bf"
+  integrity sha1-SONfoXb318th4/AYO65k+JqCRL8=
+  dependencies:
+    "@umijs/ast" "3.4.7"
+    "@umijs/babel-preset-umi" "3.4.7"
+    "@umijs/deps" "0.7.1"
+    "@umijs/utils" "3.4.7"
+
 "@umijs/deps@0.7.1":
   version "0.7.1"
   resolved "https://registry.npm.taobao.org/@umijs/deps/download/@umijs/deps-0.7.1.tgz?cache=0&sync_timestamp=1616493863694&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fdeps%2Fdownload%2F%40umijs%2Fdeps-0.7.1.tgz#a83ff42dc75fcd5695946eda525e0ad9513abbe1"
@@ -2572,7 +2634,19 @@
     jest-worker "24.9.0"
     prettier "2.2.1"
 
-"@umijs/utils@^3.4.7":
+"@umijs/runtime@^3.4.7":
+  version "3.4.7"
+  resolved "https://registry.npm.taobao.org/@umijs/runtime/download/@umijs/runtime-3.4.7.tgz?cache=0&sync_timestamp=1616740126810&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fruntime%2Fdownload%2F%40umijs%2Fruntime-3.4.7.tgz#d8a67e2fdc5d2c70b11c7dd3c30d702b906b891a"
+  integrity sha1-2KZ+L9xdLHCxHH3Tww1wK5BriRo=
+  dependencies:
+    "@types/react-router" "5.1.12"
+    "@types/react-router-dom" "5.1.7"
+    history-with-query "4.10.4"
+    react-router "5.2.0"
+    react-router-dom "5.2.0"
+    use-subscription "1.5.1"
+
+"@umijs/utils@3.4.7", "@umijs/utils@^3.4.7":
   version "3.4.7"
   resolved "https://registry.npm.taobao.org/@umijs/utils/download/@umijs/utils-3.4.7.tgz?cache=0&sync_timestamp=1616740128364&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Futils%2Fdownload%2F%40umijs%2Futils-3.4.7.tgz#68c4a7fcd49f8a2c36bd51919a1dca8ee297bbbe"
   integrity sha1-aMSn/NSfiiw2vVGRmh3KjuKXu74=
@@ -3716,6 +3790,11 @@ core-js-compat@^3.6.2, core-js-compat@^3.8.1, core-js-compat@^3.9.0:
   dependencies:
     browserslist "^4.16.3"
     semver "7.0.0"
+
+core-js@3.6.5:
+  version "3.6.5"
+  resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
+  integrity sha1-c5XcJzrzf7LlDpvT2f6EEoUjHRo=
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -5147,7 +5226,7 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.npm.taobao.org/hex-color-regex/download/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=
 
-history-with-query@^4.10.4:
+history-with-query@4.10.4, history-with-query@^4.10.4:
   version "4.10.4"
   resolved "https://registry.npm.taobao.org/history-with-query/download/history-with-query-4.10.4.tgz#8161ff3c5044e29dfaeb73e7587eb3d4c1a8090e"
   integrity sha1-gWH/PFBE4p3663PnWH6z1MGoCQ4=
@@ -8124,7 +8203,7 @@ react-refresh@^0.9.0:
   resolved "https://registry.npm.taobao.org/react-refresh/download/react-refresh-0.9.0.tgz?cache=0&sync_timestamp=1616603381680&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-refresh%2Fdownload%2Freact-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
   integrity sha1-cYYzN63D5cL4pr/d0Srjv+Mqr78=
 
-react-router-dom@^5.2.0:
+react-router-dom@5.2.0, react-router-dom@^5.2.0:
   version "5.2.0"
   resolved "https://registry.npm.taobao.org/react-router-dom/download/react-router-dom-5.2.0.tgz#9e65a4d0c45e13289e66c7b17c7e175d0ea15662"
   integrity sha1-nmWk0MReEyieZsexfH4XXQ6hVmI=
@@ -9889,6 +9968,13 @@ url-parse-lax@^3.0.0:
   dependencies:
     prepend-http "^2.0.0"
 
+use-subscription@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npm.taobao.org/use-subscription/download/use-subscription-1.5.1.tgz#73501107f02fad84c6dd57965beb0b75c68c42d1"
+  integrity sha1-c1ARB/AvrYTG3VeWW+sLdcaMQtE=
+  dependencies:
+    object-assign "^4.1.1"
+
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -9915,6 +10001,11 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
+
+v8-compile-cache@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/v8-compile-cache/download/v8-compile-cache-2.3.0.tgz?cache=0&sync_timestamp=1614993639567&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fv8-compile-cache%2Fdownload%2Fv8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
+  integrity sha1-LeGWGMZtwkfc+2+ZM4A12CRaLO4=
 
 validate-npm-package-license@^3.0.1, validate-npm-package-license@^3.0.4:
   version "3.0.4"

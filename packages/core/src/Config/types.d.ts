@@ -7,7 +7,6 @@ type WithFalse<T> = {
 };
 
 export interface BaseConfig extends UserConfig {
-  title?: string;
   routes?: IRoute[];
   exportStatic?: boolean;
 }

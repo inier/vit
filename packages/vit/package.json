@@ -9,7 +9,11 @@
   "homepage": "https://github.com/vitjs/vit#readme",
   "license": "MIT",
   "main": "index.js",
+  "module": "dist/index.esm.js",
   "types": "types.d.ts",
+  "bin": {
+    "vit": "bin/vit.js"
+  },
   "files": [
     "lib",
     "dist",
@@ -23,9 +27,6 @@
     "type": "git",
     "url": "git+https://github.com/vitjs/vit.git"
   },
-  "scripts": {
-    "build": "vite build && tsc"
-  },
   "bugs": {
     "url": "https://github.com/vitjs/vit/issues"
   },
@@ -34,6 +35,7 @@
     "@vitjs/preset-built-in": "^0.1.0",
     "@vitjs/runtime": "^0.1.0",
     "react": "16.x",
-    "react-dom": "16.x"
+    "react-dom": "16.x",
+    "v8-compile-cache": "^2.3.0"
   }
 }
