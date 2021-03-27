@@ -1,8 +1,13 @@
+import { createDebug, Debugger } from '@umijs/utils';
+
 abstract class Common {
+  public debug: Debugger;
   protected namespace: string;
   protected profilers: object;
   protected formatTiming(timing: number) {
-    return timing < 60 * 1000 ? `${Math.round(timing / 10) / 100}s` : `${Math.round(timing / 600) / 100}m`;
+    return timing < 60 * 1000
+      ? `${Math.round(timing / 10) / 100}s`
+      : `${Math.round(timing / 600) / 100}m`;
   }
 
   constructor(namespace: string) {
@@ -12,6 +17,7 @@ abstract class Common {
     }
     this.namespace = namespace;
     this.profilers = {};
+    this.debug = createDebug(this.namespace);
   }
 
   abstract error(msg: string): void;

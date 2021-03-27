@@ -1,5 +1,4 @@
-import { chalk } from '@vitjs/utils';
-
+import { chalk } from '@umijs/utils';
 import Common from './Common';
 
 export default class Logger extends Common {

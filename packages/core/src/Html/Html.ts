@@ -1,19 +1,20 @@
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 import assert from 'assert';
-import prettier from 'prettier';
+import { cheerio } from '@umijs/utils';
+import ejs from '@umijs/deps/compiled/ejs';
+import prettier from '@umijs/deps/reexported/prettier';
 
-import {} from '../Config'
-
-export interface HtmlOptions {
-  templatePath?: string;
-}
+import { IConfig } from '..';
+import { IOpts, IGetContentArgs, IScript } from './types';
 
 class Html {
-  templatePath?: string;
+  config: IConfig;
+  tplPath?: string;
 
-  constructor(opts: HtmlOptions) {
-    this.templatePath = opts.templatePath;
+  constructor(opts: IOpts) {
+    this.config = opts.config;
+    this.tplPath = opts.tplPath;
   }
 
   getHtmlPath(path: string) {
@@ -25,7 +26,7 @@ class Html {
     path = path.replace(/^\//, '');
     path = path.replace(/\/$/, '');
 
-    if ((this.config.exportStatic && this.config.exportStatic.htmlSuffix) || path === 'index.html') {
+    if (this.config.exportStatic || path === 'index.html') {
       return `${path}`;
     } else {
       return `${path}/index.html`;
@@ -35,7 +36,7 @@ class Html {
   getRelPathToPublicPath(path: string) {
     const htmlPath = this.getHtmlPath(path);
     const len = htmlPath.split('/').length;
-    return Array(this.config.exportStatic && this.config.exportStatic.htmlSuffix ? len : len - 1).join('../') || './';
+    return Array(this.config.exportStatic ? len : len - 1).join('../') || './';
   }
 
   getAsset(opts: { file: string; path?: string }) {
@@ -43,10 +44,10 @@ class Html {
       return opts.file;
     }
     const file = opts.file.charAt(0) === '/' ? opts.file.slice(1) : opts.file;
-    if (this.config.exportStatic && this.config.exportStatic.dynamicRoot) {
+    if (this.config.exportStatic) {
       return `${this.getRelPathToPublicPath(opts.path || '/')}${file}`;
     } else {
-      return `${this.config.publicPath}${file}`;
+      return `${this.config.publicDir}${file}`;
     }
   }
 
@@ -163,8 +164,7 @@ class Html {
       );
     });
 
-    // root element
-    const mountElementId = config.mountElementId || 'root';
+    const mountElementId = 'root';
     if (!$(`#${mountElementId}`).length) {
       const bodyEl = $('body');
       assert(bodyEl.length, `<body> not found in html template.`);

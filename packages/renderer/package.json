@@ -8,19 +8,13 @@
   "author": "theprimone <yuns.xie@qq.com>",
   "homepage": "https://github.com/vitjs/vit#readme",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "./dist/@vitjs/renderer.umd.js",
-  "module": "./dist/@vitjs/renderer.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/@vitjs/renderer.es.js",
-      "require": "./dist/@vitjs/renderer.umd.js"
-    }
-  },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build && tsc"
   },
   "peerDependencies": {
     "react": "16.x || 17.x",
